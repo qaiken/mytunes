@@ -3,10 +3,6 @@ var SongQueueEntryView = Backbone.View.extend({
   // your code here!
   tagName: 'li',
 
-  initialize: function() {
-   this.model.on('remove',this.remove,this);
-  },
-
   template: _.template('<span class="artist">(<%= artist %>)</span> <%= title %>'),
 
   initialize: function() {
