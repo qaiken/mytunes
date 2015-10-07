@@ -1,6 +1,8 @@
 // LibraryView.js - Defines a backbone view class for the music library.
 var LibraryView = Backbone.View.extend({
 
+  className: 'library',
+
   initialize: function() {
     this.render();
   },

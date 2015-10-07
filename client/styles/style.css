@@ -1,3 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  color: white;
+}
+
+audio {
+  display: block;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
@@ -6,28 +19,15 @@ h3 {
 
 .app {
   padding: 20px;
-  border: 3px solid yellow;
+  border: 3px solid #000;
   border-radius: 10px;
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
   background: rgba(45,45,45,.6);
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-h1{
-  color: red;
-}
-
-.artist{
-  font-weight: bold;
-}
-
-.playCount{
-  color: grey;
-  font-style: italic;
+  transform: translate(-50%, -50%);
 }
 
 .container {
@@ -35,15 +35,19 @@ h1{
   margin: 0 auto;
 }
 
-html {
-  height: 100%;
+.artist{
+  font-weight: bold;
 }
 
-body{
-  background-image: url("../img/audiowaves.jpg");
-  background-size: cover;
-  background-position: center center;
-  color: white;
-  background-repeat: no-repeat;
+.playCount{
+  font-style: italic;
 }
 
+.song-queue {
+  height: 200px;
+  overflow: scroll;
+}
+
+.library {
+  margin: 0 0 20px 0;
+}
